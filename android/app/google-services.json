@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "272450899801",
+    "project_id": "chargers-aa43e",
+    "storage_bucket": "chargers-aa43e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272450899801:android:5a648503a664467b0a4648",
+        "android_client_info": {
+          "package_name": "com.example.chargers"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCotohs2rqqsrtwrkMsnqEHlBB-Z4tGK5Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
