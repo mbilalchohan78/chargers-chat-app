@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'screens/splash_screen.dart';
 import 'screens/login_screen.dart';
 import 'screens/home_screen.dart';
+import 'services/notification_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,6 +25,8 @@ void main() async {
   } else {
     // Android ke liye
     await Firebase.initializeApp();
+      // Notification service initialize karo
+    await NotificationService.initialize();
   }
   
   runApp(const MyApp());

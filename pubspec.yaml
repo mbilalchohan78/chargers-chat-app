@@ -36,12 +36,29 @@ dependencies:
   firebase_auth: ^5.3.3
   cloud_firestore: ^5.4.4
   firebase_database: ^11.1.4
-   
+  firebase_storage: ^12.3.0
+  firebase_messaging: ^15.2.10    # FCM ke liye
+  flutter_local_notifications: ^18.0.1   # Notification dikhane ke liye
+
   # Utilities
   intl: ^0.18.1
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  image_picker: ^1.0.0        # Camera/gallery se pick karne ke liye
+  file_picker: ^11.0.2         # Video file pick karne ke liye
+  cached_network_image: ^3.3.0 # Images cache karne ke liye (optional)
+  video_player: ^2.8.3
+
+  agora_rtc_engine: ^6.3.2   # Agora SDK
+  permission_handler: ^11.3.1  # Microphone/Camera permissions
+  flutter_launcher_icons: ^0.14.4
+  
+  
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/B_logo.png"
 
 dev_dependencies:
   flutter_test:
