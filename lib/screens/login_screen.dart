@@ -361,7 +361,7 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                                 padding: EdgeInsets.symmetric(vertical: 12),
                                 child: Text(
                                   _isLogin
-                                      ? "Don't have account? Sign Up"
+                                      ? ""
                                       : "Already have account? Login",
                                   style: TextStyle(
                                     fontSize: 14,

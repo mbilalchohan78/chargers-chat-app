@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'screens/splash_screen.dart';
 import 'screens/login_screen.dart';
 import 'screens/home_screen.dart';
+import 'services/notification_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -12,18 +13,20 @@ void main() async {
   if (kIsWeb) {
     await Firebase.initializeApp(
       options: const FirebaseOptions(
-        apiKey: "AIzaSyCeUecZLtf8oB-p3u8jur_Hd-YBQZ3T8Ps",
+        apiKey: "",
         authDomain: "chargers-aa43e.firebaseapp.com",
         projectId: "chargers-aa43e",
         storageBucket: "chargers-aa43e.firebasestorage.app",
         messagingSenderId: "272450899801",
-        appId: "1:272450899801:web:72966c44dd341e8b0a4648",
+        appId: "",
         measurementId: "G-DDSS389L7E"
       ),
     );
   } else {
     // Android ke liye
     await Firebase.initializeApp();
+      // Notification service initialize karo
+    await NotificationService.initialize();
   }
   
   runApp(const MyApp());
